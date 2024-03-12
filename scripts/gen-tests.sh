@@ -54,7 +54,7 @@ javac -d "$ROOT_DIR"/raw-classes "$ROOT_DIR"/src/main/java/comp5111/assignment/c
 for i in {3..3}; do
   java -classpath .:"$ROOT_DIR"/raw-classes:"$ROOT_DIR"/lib/* randoop.main.Main \
     gentests  --testclass comp5111.assignment.cut.Subject --output-limit=2000 \
-    --randomseed=$i \
-    --junit-output-dir="$ROOT_DIR"/src/test/randoop$i \
+    --randomseed=8 \
+    --junit-output-dir="$ROOT_DIR"/src/test/randoop3 \
     --junit-package-name=comp5111.assignment.cut
 done
